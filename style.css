@@ -1,0 +1,42 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2E8C6;
+  }
+  img {
+      height: auto;
+      max-width: 100%;
+  }
+  nav {
+    background-color: #800000;
+  }
+  nav a {
+    color: #ffffff;
+  }
+  #aboutme {
+    background-color: #982B1C;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  #hero {
+    background-color: #982B1C;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  #portfolio .card {
+    transition: transform 0.3s;
+  }
+  #portfolio .card:hover {
+    transform: translateY(-5px);
+  }
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  footer a {
+    color: #ffffff;
+    margin: 0 10px;
+  }
