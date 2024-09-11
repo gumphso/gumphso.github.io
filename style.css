@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #F2E8C6;
   }
-  img {
+  .img-fluid {
       height: auto;
       max-width: 100%;
   }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,67 +12,99 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="/style.css" rel="stylesheet">
-  
+
 </head>
+
 <body>
 
-    <div style="background-color: #982B1C;">
-  <!-- Navbar -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#hero">Home</a>
-          </li>
-          <li class="nav-item"></li>
+  <div style="background-color: #982B1C;">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item"></li>
             <a class="nav-link" href="html/about-me.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio" >Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="container">
-      <h1>Hello, I'm Gabe</h1>
-      <p>Back-end Developer | Designer | Freelancer</p>
-      <a href="#portfolio" class="btn btn-light btn-lg mt-4">See My Work</a>
-    </div>
-  </section>
-</div>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <h1>Hello, I'm Gabe</h1>
+        <p>Back-End Developer | 2D Artist | Freelancer</p>
+        <div class="container d-flex flex-column align-items-center">
+          <a href="#portfolio" class="btn btn-light btn-lg mb-2 col-10 col-md-4">See My Work</a>
+
+
+          <a href="/html/about-me.html" class="btn btn-dark btn mb-2 col-8 col-md-2">About Me</a>
+        </div>
+      </div>
+    </section>
+  </div>
   <!-- Skills Section -->
   <section id="skills" class="py-5">
     <div class="container">
       <h2 class="text-center">My Skills</h2>
       <hr class="w-25 mx-auto mb-4">
       <div class="row text-center">
+
         <div class="col-md-4">
           <h3>Python</h3>
-          <p>Lorem Ibpsem</p>
+          <p>Experienced in building scalable back-end systems, automating tasks, and developing machine learning models
+            using frameworks like TensorFlow.</p>
         </div>
+
         <div class="col-md-4">
           <h3>C++</h3>
-          <p>Lorem Ibpsem</p>
+          <p>Proficient in low-level programming, object-oriented design, and game development, with a focus on
+            performance optimization and memory management.</p>
         </div>
+
         <div class="col-md-4">
-          <h3>Javascript</h3>
-          <p>Lorem Ibpsem</p>
+          <h3>JavaScript</h3>
+          <p>Skilled in front-end and back-end JavaScript development, using tools like Node.js, React, and Preact to
+            create dynamic, full-stack applications.</p>
         </div>
+
+        <div class="col-md-4 mt-4">
+          <h3>Godot</h3>
+          <p>Game development expertise using the Godot engine, with experience in GDScript and C# for creating
+            interactive 2D and 3D games, asset management, and scene building.</p>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <h3>Version Control (Git)</h3>
+          <p>Experienced in using Git for version control, collaborating on projects, and managing code repositories on
+            GitHub.</p>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <h3>UI/UX Design</h3>
+          <p>Proficient in creating basic user interfaces using tools like Canva. Familiar with layout design and visual
+            presentation to ensure simple and clean user experiences.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -84,30 +117,42 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card">
-            <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Project 1">
+            <img src="pic/pexels-pixabay-267669_resize.jpg" class="card-img-top" alt="Project 1">
             <div class="card-body">
               <h5 class="card-title">Language Learning Model</h5>
-              <p class="card-text">Description of the project. This is a brief summary of what the project is about.</p>
-              <a href="#" class="btn btn-dark">View Details</a>
+              <p class="card-text">
+                A machine learning project using TensorFlow to simplify sentence structures for children and English
+                learners. It employs natural language processing to transform complex grammar into easy-to-understand
+                formats, aiding language comprehension and acquisition.
+              </p>
+              <a href="/html/project1.html" class="btn btn-dark">View Details</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Project 2">
+            <img src="pic/image5_crop.jpeg" class="card-img-top" alt="Project 2">
             <div class="card-body">
               <h5 class="card-title">Image Segmentor</h5>
-              <p class="card-text">Description of the project. This is a brief summary of what the project is about.</p>
+              <p class="card-text">
+                A deep learning project focused on image segmentation, utilizing autoencoders to classify objects based
+                on shape and color. The model processes visual data to differentiate between various elements in an
+                image.
+              </p>
               <a href="/html/project2.html" class="btn btn-dark">View Details</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Project 3">
+            <img src="/pic/Librarion-temp-title.png" class="card-img-top" alt="Project 3">
             <div class="card-body">
               <h5 class="card-title">Godot Game Project</h5>
-              <p class="card-text">Description of the project. This is a brief summary of what the project is about.</p>
+              <p class="card-text">
+                A work-in-progress game built with Godot, inspired by Stardew Valley. This project focuses on player
+                interactions, storytelling, and resource management, showcasing skills in GDScript, C#, and game design
+                workflows.
+              </p>
               <a href="/html/project3.html" class="btn btn-dark">View Details</a>
             </div>
           </div>
@@ -137,14 +182,14 @@
         </div>
         <button type="submit" class="btn btn-dark">Send Message</button>
       </form>
-    <div class="container text-center">
-      <span>
-        <p style="display: inline-flex; margin-right: 5px; vertical-align: middle;">Using</p>
-        <a style="display: inline-flex" href="https://formspree.io">
-          <img height="26px" src="/pic/formspree-new.svg">
-        </a>
-      </span>
-    </div>
+      <div class="container text-center">
+        <span>
+          <p style="display: inline-flex; margin-right: 5px; vertical-align: middle;">Using</p>
+          <a style="display: inline-flex" href="https://formspree.io">
+            <img id="formspree" height="26px" src="/pic/formspree-new.svg">
+          </a>
+        </span>
+      </div>
     </div>
   </section>
 
@@ -157,6 +202,7 @@
         <a href="https://www.linkedin.com/in/gabrielallison/">LinkedIn</a> |
         <a href="https://github.com/gumphso">GitHub</a> |
         <a href="https://x.com/gabeallison09">Twitter</a>
+        
       </div>
     </div>
   </footer>
@@ -166,4 +212,5 @@
   <!-- Custom JS -->
   <script src="js\portfolio.js"></script>
 </body>
+
 </html>
