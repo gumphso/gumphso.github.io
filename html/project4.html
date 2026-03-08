@@ -5,15 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Gabriel Allison's Portfolio - Project</title>
+  <title>Gabriel Allison's Portfolio - Rust Game Development</title>
   <link rel="icon" type="image/x-icon" href="/pic/favicon.ico">
-  
+
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="/style.css" rel="stylesheet">
+
+  <style>
+    #card-head {
+      background-color: #982B1C;
+      color: white;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,7 +31,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio</a>
+        <a class="navbar-brand" href="/index.html#hero">Gabriel Allison</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,7 +42,7 @@
               <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutme">About Me</a>
+              <a class="nav-link" href="/html/about-me.html">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/index.html#skills">Skills</a>
@@ -49,85 +58,97 @@
       </div>
     </nav>
 
-    <style>
-      #card-head {
-        background-color: #982B1C;
-        color: white;
-        padding-bottom: 40px;
-        text-align: center;
-      }
-    </style>
-    <!-- Project Section -->
+    <!-- Project Header -->
     <section style="padding: 40px;">
       <div class="container">
-        <h1 id="card-head" class="text-center">Project: Librarion</h1>
+        <h1 id="card-head" class="text-center">Project: Rust Game Development (Bevy)</h1>
         <div class="row justify-content-center">
           <div class="col-12 col-md-8">
             <div class="card">
               <div class="card-body">
-                <img class="card-img-top" src="/pic/librarion.png">
-                <h2 class="card-title">Librarion (Early Development)</h2>
-                <div class="container ">
-                  <p class="card-text"></p>
-                  This game is a work in progress,
-                  In this this game you will unviel stories, villians, and characters from stories, books, and
-                  narratives, building a community and relationships through the characters and quests
-                  We project to add a dynamic world-building and relationship system. With varied gameplay elements.
-                  The game emphasizes storytelling, world-building, and the relationship
-                  between characters and their stories.
+                <img class="card-img-top mb-3" src="/pic/rust_title.png" alt="Rust Game Development">
+                <h2 class="card-title">Bevy Engine Exploration</h2>
+                <p class="card-text">
+                  A collection of Rust game development projects built with the
+                  <a href="https://bevyengine.org/" target="_blank">Bevy game engine</a>.
+                  These projects explore Bevy's Entity Component System (ECS) architecture, sprite sheet animation
+                  pipelines, and core game mechanics — all written in Rust for maximum performance and memory safety.
+                </p>
 
-
-                  </p>
-                  <div class="row align-items-start">
-                    <div class="col col-md-8">
-                      <h4>Features:</h4>
-                      <ul>
-                        <li>Dynamic story progression based on player decisions</li>
-                        <li>Character-driven narrative exploration</li>
-                        <li>Custom library management mechanics</li>
-
-                      </ul>
-
-
-
-                    </div>
-                    <div class="col col-md-4">
-                      <h4>Skills:</h4>
-                      <ul>
-                        <li>GDscript</li>
-                        <li>C#</li>
-                        <li>2D Design</li>
-                        <li>Audio Design</li>
-                      </ul>
-                    </div>
-
-                    <a href="" class="btn btn-dark">The repository is currently private between me and my group.</a>
+                <div class="row align-items-start mt-3">
+                  <div class="col-12 col-md-6">
+                    <h4>Skills:</h4>
+                    <ul>
+                      <li>Rust</li>
+                      <li>Bevy (ECS)</li>
+                      <li>Sprite Sheet Animation</li>
+                      <li>2D Game Development</li>
+                      <li>Cargo / Crate Management</li>
+                    </ul>
                   </div>
-
+                  <div class="col-12 col-md-6">
+                    <h4>Repositories:</h4>
+                    <ul>
+                      <li>
+                        <a href="https://github.com/Mirth-Development/animation_test" target="_blank">
+                          animation_test
+                        </a>
+                        — Sprite sheet &amp; animation systems
+                      </li>
+                      <li>
+                        <a href="https://github.com/gumphso/Rust-Programming-Practice" target="_blank">
+                          Rust-Programming-Practice
+                        </a>
+                        — Bevy practice &amp; learning exercises
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Project Gallery -->
     <section style="padding: 40px;">
       <div class="container">
         <h1 id="card-head" class="text-center">Project Gallery</h1>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8">
-            <div class="card">
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+
+          <!-- Video 1: Animation Test -->
+          <div class="col">
+            <div class="card h-100">
+              <video class="card-img-top" src="/video/animation_test.webm" type="video/webm"
+                loop autoplay muted controls></video>
               <div class="card-body">
-                
-                <h2 class="card-title">Some photos from development</h2>
-                <h4>Early Game Movement</h4>
-                <video src="/video/test.webm" class="w-100" type="video/webm" loop autoplay muted controls alt="Video of early game movement"></video>
-                <h4>Scrapped enemy idea</h4>
-                <img class="card-img-top" src="/pic/skull-export.gif" class="imgbacking">
+                <h5 class="card-title">Animation Test</h5>
+                <p class="card-text">
+                  Testing Bevy's sprite sheet integration and animation state machine using the ECS pipeline.
+                </p>
+                <a href="https://github.com/Mirth-Development/animation_test" target="_blank"
+                  class="btn btn-dark mt-auto">View Repository</a>
               </div>
             </div>
           </div>
+
+          <!-- Video 2: Bevy Practice -->
+          <div class="col">
+            <div class="card h-100">
+              <video class="card-img-top" src="/video/bevy_practice.webm" type="video/webm"
+                loop autoplay muted controls></video>
+              <div class="card-body">
+                <h5 class="card-title">Bevy Practice</h5>
+                <p class="card-text">
+                  Early Bevy experiments covering player movement, ECS setup, and scene building in Rust.
+                </p>
+                <a href="https://github.com/gumphso/Rust-Programming-Practice" target="_blank"
+                  class="btn btn-dark mt-auto">View Repository</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -136,17 +157,16 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2024 Gabriel Allison. All rights reserved.</p>
+      <p>&copy; 2026 Gabriel Allison. All rights reserved.</p>
       <div>
         <a href="https://www.linkedin.com/in/gabrielallison/">LinkedIn</a> |
-        <a href="https://github.com/gumphso">GitHub</a> |
-        <a href="https://x.com/gabeallison09">Twitter</a>
+        <a href="https://github.com/gumphso">GitHub</a>
       </div>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
   <script src="/js/portfolio.js"></script>
 </body>

@@ -9,7 +9,7 @@
   <link rel="icon" type="image/x-icon" href="/pic/favicon.ico">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="/style.css" rel="stylesheet">
@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#hero">My Portfolio</a>
+        <a class="navbar-brand" href="#hero">Gabriel Allison</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,8 +32,8 @@
             <li class="nav-item">
               <a class="nav-link" href="#hero">Home</a>
             </li>
-            <li class="nav-item"></li>
-            <a class="nav-link" href="html/about-me.html">About Me</a>
+            <li class="nav-item">
+              <a class="nav-link" href="html/about-me.html">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
@@ -53,7 +53,7 @@
     <section id="hero">
       <div class="container">
         <h1>Hello, I'm Gabriel</h1>
-        <p>Back-End Developer | 2D Artist | Freelancer</p>
+        <p>Software Developer | 2D Artist | Game Developer</p>
         <div class="container d-flex flex-column align-items-center">
           <a href="#portfolio" class="btn btn-light btn-lg mb-2 col-10 col-md-4">See My Work</a>
 
@@ -68,42 +68,76 @@
     <div class="container">
       <h2 class="text-center">My Skills</h2>
       <hr class="w-25 mx-auto mb-4">
-      <div class="row text-center">
+      <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
 
-        <div class="col-md-4">
-          <h3>Python</h3>
-          <p>Experienced in building scalable back-end systems, automating tasks, and developing machine learning models
-            using frameworks like TensorFlow.</p>
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h3 class="card-title">Python</h3>
+              <p class="card-text">Experienced in building scalable back-end systems, automating tasks, and developing machine learning models
+                using frameworks like TensorFlow.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-md-4">
-          <h3>C++</h3>
-          <p>Proficient in low-level programming, object-oriented design, and game development, with a focus on
-            performance optimization and memory management.</p>
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h3 class="card-title">C++</h3>
+              <p class="card-text">Proficient in low-level programming, object-oriented design, and game development, with a focus on
+                performance optimization and memory management.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-md-4">
-          <h3>JavaScript</h3>
-          <p>Skilled in front-end and back-end JavaScript development, using tools like Node.js, React, and Preact to
-            create dynamic, full-stack applications.</p>
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h3 class="card-title">JavaScript</h3>
+              <p class="card-text">Skilled in front-end and back-end JavaScript development, using tools like Node.js, React, and Preact to
+                create dynamic, full-stack applications.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-md-4 mt-4">
-          <h3>Godot</h3>
-          <p>Game development expertise using the Godot engine, with experience in GDScript and C# for creating
-            interactive 2D and 3D games, asset management, and scene building.</p>
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h3 class="card-title">Godot</h3>
+              <p class="card-text">Game development expertise using the Godot engine, with experience in GDScript and C# for creating
+                interactive 2D and 3D games, asset management, and scene building.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-md-4 mt-4">
-          <h3>Version Control (Git)</h3>
-          <p>Experienced in using Git for version control, collaborating on projects, and managing code repositories on
-            GitHub.</p>
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h3 class="card-title">Version Control (Git)</h3>
+              <p class="card-text">Experienced in using Git for version control, collaborating on projects, and managing code repositories on
+                GitHub.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-md-4 mt-4">
-          <h3>UI/UX Design</h3>
-          <p>Proficient in creating basic user interfaces using tools like Canva. Familiar with layout design and visual
-            presentation to ensure simple and clean user experiences.</p>
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h3 class="card-title">Rust</h3>
+              <p class="card-text">Developing games and systems-level applications using Rust and the Bevy game engine, with a focus on
+                performance, memory safety, and ECS-driven architecture.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h3 class="card-title">UI/UX Design</h3>
+              <p class="card-text">Proficient in creating basic user interfaces using tools like Canva. Familiar with layout design and visual
+                presentation to ensure simple and clean user experiences.</p>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -122,7 +156,7 @@
 
       <h3 class="text-center align-content-center" style="padding-bottom: 20px;">Projects</h3>
 
-      <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
         <div class="col">
           <div class="card h-100">
             <img src="pic/pexels-pixabay-267669_resize.jpg" class="card-img-top rounded" alt="Project 1">
@@ -155,25 +189,23 @@
           <div class="card h-100">
             <img src="/pic/rust_title.png" class="card-img-top rounded" alt="Project 3">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Rust Game Development</h5>
+              <h5 class="card-title">Rust Game Development (Bevy)</h5>
               <p class="card-text flex-grow-1">
-                A work-in-progress game built with Godot, inspired by Stardew Valley. This project focuses on player
-                interactions, storytelling, and resource management, showcasing skills in GDScript, C#, and game design
-                workflows.
+                Exploring game development in Rust using the Bevy game engine. Projects include sprite sheet animation
+                systems and ECS-based game mechanics, demonstrating low-level performance with modern game architecture.
               </p>
-              <a href="/html/project3.html" class="btn btn-dark mt-auto">View Details</a>
+              <a href="/html/project4.html" class="btn btn-dark mt-auto">View Details</a>
             </div>
           </div>
         </div>
-        <div class="col ">
-          <div class="card h-100 ">
+        <div class="col">
+          <div class="card h-100">
             <img src="/pic/Librarion-temp-title.png" class="card-img-top rounded" alt="Project 4">
-            <div class="card-body d-flex flex-column ">
-              <h5 class="card-title">Godot Game Project</h5>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Librarion (Godot)</h5>
               <p class="card-text flex-grow-1">
-                A work-in-progress game built with Godot, inspired by Stardew Valley. This project focuses on player
-                interactions, storytelling, and resource management, showcasing skills in GDScript, C#, and game design
-                workflows.
+                A work-in-progress narrative game built with Godot. Players uncover stories, villains, and characters
+                from books and literature, building a community through quests and relationships.
               </p>
               <a href="/html/project3.html" class="btn btn-dark mt-auto">View Details</a>
             </div>
@@ -221,20 +253,19 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2024 Gabriel Allison. All rights reserved.</p>
+      <p>&copy; 2026 Gabriel Allison. All rights reserved.</p>
       <div>
         <a href="https://www.linkedin.com/in/gabrielallison/">LinkedIn</a> |
-        <a href="https://github.com/gumphso">GitHub</a> |
-        <a href="https://x.com/gabeallison09">Twitter</a>
-        
+        <a href="https://github.com/gumphso">GitHub</a>
+
       </div>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
-  <script src="js\portfolio.js"></script>
+  <script src="/js/portfolio.js"></script>
 </body>
 
 </html>
