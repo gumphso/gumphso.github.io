@@ -7,10 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gabriel Allison's Portfolio</title>
   <link rel="icon" type="image/x-icon" href="/pic/favicon.ico">
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Custom Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="/style.css" rel="stylesheet">
 
@@ -53,7 +55,7 @@
     <section id="hero">
       <div class="container">
         <h1>Hello, I'm Gabriel</h1>
-        <p>Software Developer | 2D Artist | Game Developer</p>
+        <p>Software Engineer | Technical Support</p>
         <div class="container d-flex flex-column align-items-center">
           <a href="#portfolio" class="btn btn-light btn-lg mb-2 col-10 col-md-4">See My Work</a>
 
@@ -83,9 +85,19 @@
         <div class="col">
           <div class="card h-100 text-center p-3">
             <div class="card-body">
+              <h3 class="card-title">Rust</h3>
+              <p class="card-text">Developing 2D games using Rust and the Bevy game engine, including an ongoing multiplayer project with a small 
+                team and a solo-built game jam entry (Hexlock, Wheeljam 2), with a focus on performance, memory safety, and ECS-driven architecture.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
               <h3 class="card-title">C++</h3>
-              <p class="card-text">Proficient in low-level programming, object-oriented design, and game development, with a focus on
-                performance optimization and memory management.</p>
+              <p class="card-text">Proficient in low-level programming, object-oriented design, and performance optimisation, with a foundation from 
+                coursework and personal projects.</p>
             </div>
           </div>
         </div>
@@ -94,8 +106,8 @@
           <div class="card h-100 text-center p-3">
             <div class="card-body">
               <h3 class="card-title">JavaScript</h3>
-              <p class="card-text">Skilled in front-end and back-end JavaScript development, using tools like Node.js, React, and Preact to
-                create dynamic, full-stack applications.</p>
+              <p class="card-text">Skilled in front-end development using JavaScript, HTML, CSS, and Bootstrap, with some Node.js experience, 
+                this site itself is built on that stack.</p>
             </div>
           </div>
         </div>
@@ -103,9 +115,9 @@
         <div class="col">
           <div class="card h-100 text-center p-3">
             <div class="card-body">
-              <h3 class="card-title">Godot</h3>
-              <p class="card-text">Game development expertise using the Godot engine, with experience in GDScript and C# for creating
-                interactive 2D and 3D games, asset management, and scene building.</p>
+              <h3 class="card-title">SQL</h3>
+              <p class="card-text">Experience writing and automating SQL database connectors and queries, including test automation work during 
+                a software development internship.</p>
             </div>
           </div>
         </div>
@@ -123,19 +135,9 @@
         <div class="col">
           <div class="card h-100 text-center p-3">
             <div class="card-body">
-              <h3 class="card-title">Rust</h3>
-              <p class="card-text">Developing games and systems-level applications using Rust and the Bevy game engine, with a focus on
-                performance, memory safety, and ECS-driven architecture.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 text-center p-3">
-            <div class="card-body">
               <h3 class="card-title">UI/UX Design</h3>
-              <p class="card-text">Proficient in creating basic user interfaces using tools like Canva. Familiar with layout design and visual
-                presentation to ensure simple and clean user experiences.</p>
+              <p class="card-text">Comfortable with layout and visual design fundamentals, this site is built on Bootstrap, keeping things 
+                clean, responsive, and simple to navigate.</p>
             </div>
           </div>
         </div>
@@ -151,15 +153,56 @@
     <hr class="w-25 mx-auto mb-4">
     <div class="row">
       <div class="container d-flex flex-column align-items-center" style="padding-bottom: 20px;">
-        <a href="/pdf/GARESUME_forWeb.pdf" class="btn btn-dark col-8 col-md-4">My Resume</a>
+        <a href="/pdf/GARESUME_forWeb.pdf" download="Gabriel_M_Allison_Resume.pdf" class="btn btn-dark col-8 col-md-4">Download My Resume</a>
       </div>
 
-      <h3 class="text-center align-content-center" style="padding-bottom: 20px;">Projects</h3>
-
+      <div class="row">
+        <embed
+          src="/pdf/GARESUME_forWeb.pdf#toolbar=0&navpanes=0&scrollbar=0"
+          type="application/pdf"
+          frameBorder="0"
+          scrolling="auto"
+          
+          width="500px" height="900px"
+        ></embed>
+      </div>
+      
+      <div class="row mb-2 row-cols-1 align-content-center"  style="height: 100px;">
+         <h3 class="text-center align-content-center " >Projects</h3>
+         <hr class="w-25 mx-auto mb-4">
+      </div>
+     
       <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+      <div class="col">
+          <div class="card h-100">
+            <img src="pic/hexlock_title.png" class="card-img-top rounded" alt="Project 5">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Hexlock (Wheeljam 2)</h5>
+              <p class="card-text flex-grow-1">
+                A 2D lockpicking game built in Rust with the Bevy engine for the Wheeljam 2 game jam, built with a friend. Built 
+                the lock-picking mechanic/template from scratch, as no official jam template existed for Bevy from the game jam hosts.
+              </p>
+              <a href="/html/project5.html" class="btn btn-dark mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
         <div class="col">
           <div class="card h-100">
-            <img src="pic/pexels-pixabay-267669_resize.jpg" class="card-img-top rounded" alt="Project 1">
+            <img src="pic/Blue_Collar_Endurance_title_2x.jpg" class="card-img-top rounded" alt="Project 6">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Freelance Video Editing</h5>
+              <p class="card-text flex-grow-1">
+                Editing raw coaching footage into polished training and promotional content for an endurance coaching business, managing 
+                the full process from raw footage to final delivery. Work spans instructional videos that break down technique and form, 
+                alongside promotional content built for audience reach and engagement. 
+              </p>
+              <a href="/html/project6.html" class="btn btn-dark mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>  
+        <div class="col">
+          <div class="card h-100">
+            <img src="pic/dictionary-title.jpg" class="card-img-top rounded" alt="Project 1">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Language Learning Model</h5>
               <p class="card-text flex-grow-1">
@@ -202,10 +245,10 @@
           <div class="card h-100">
             <img src="/pic/Librarion-temp-title.png" class="card-img-top rounded" alt="Project 4">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Librarion (Godot)</h5>
+              <h5 class="card-title">Librarion (Godot)<br><i> *Legacy Project* </i></h5>
               <p class="card-text flex-grow-1">
-                A work-in-progress narrative game built with Godot. Players uncover stories, villains, and characters
-                from books and literature, building a community through quests and relationships.
+                An early experiment in Godot, testing the engine's scene system and GDScript while sketching out a narrative-game 
+                concept. Development didn't move past engine testing and team discussion. Kept here as an early stepping stone rather than a finished project.
               </p>
               <a href="/html/project3.html" class="btn btn-dark mt-auto">View Details</a>
             </div>

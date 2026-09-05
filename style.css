@@ -1,6 +1,8 @@
-body {
-    font-family: 'Poppins', sans-serif;
+  body {
     background-color: #F2E8C6;
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
   .img-fluid {
       height: auto;
@@ -40,3 +42,24 @@ body {
     color: #ffffff;
     margin: 0 10px;
   }
+  .card-img-top {
+    aspect-ratio: 1.4;
+  }
+
+  iframe {
+   display: block;
+   margin: 0 auto;
+}
+
+  /* .bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  } */
+  
+  /* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  } */
